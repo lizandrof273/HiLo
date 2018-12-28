@@ -9,12 +9,11 @@ public class HilLo {
 		int theNumber = (int)(Math.random()*1000 +1);
 		// System.out.println( theNumber );
 		int guess = 0;
-		System.out.println("Guess a number between 1 and 100:");
-		guess = scan.nextInt();
-		System.out.println( "You entered " + guess + "." );
-		
+		while(guess != theNumber) {
+			System.out.println("Guess a number between 1 and 100:");
+			guess = scan.nextInt();
+			System.out.println( "You entered " + guess + "." );
+		}
 	}
 
 }
-
-
