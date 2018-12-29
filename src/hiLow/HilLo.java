@@ -6,7 +6,7 @@ public class HilLo {
 		// TODO Auto-generated method stub
 		// Create a number for user to guess
 		Scanner scan = new Scanner(System.in);
-		int theNumber = (int)(Math.random()*1000 +1);
+		int theNumber = (int)(Math.random()*100 +1);
 		// System.out.println( theNumber );
 		int guess = 0;
 		while(guess != theNumber) {
