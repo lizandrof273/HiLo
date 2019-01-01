@@ -6,6 +6,8 @@ public class HilLo {
 		// TODO Auto-generated method stub
 		// Create a number for user to guess
 		Scanner scan = new Scanner(System.in);
+		String playAgain = "";
+		do {
 		int theNumber = (int)(Math.random()*100 +1);
 		// System.out.println( theNumber );
 		int guess = 0;
@@ -20,7 +22,8 @@ public class HilLo {
 				System.out.println(guess + " is correct. You win!");
 			//System.out.println( "You entered " + guess + "." );
 		} // end of while loop
-		
+		System.out.println("Would you like to play again (y/n)?");
+		playAgain = scan.next();
+		} while (playAgain.equalsIgnoreCase("y"));
 	}
-
 }
